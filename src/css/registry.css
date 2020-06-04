@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition: all .2s;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 560px;
+}
+body .logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(../img/logo.png) no-repeat;
+    background-size: 36px 43px;
+    text-decoration:none;
+    z-index: 2;
+    height: 43px;
+    line-height: 43px;
+    padding-left: 46px;
+    margin-left: 30px;
+    margin-top: 18px;
+    font-size: 36px;
+    display: block;
+    color: #000;
+}
+.leftlunbo{
+    /* https://cdn-go.cn/qq-web/zc.qq.com/latest/v3/img/01-4.jpg */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 480px;
+    float: left;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.leftlunbo img{
+    width: 100%;
+    height: 100%;
+}
+

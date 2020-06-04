@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ注册</title>
+    <link rel="stylesheet" href="../src/css/registry.css">
+    <style>
+        div{
+            background: url("https://cdn-go.cn/qq-web/zc.qq.com/latest/v3/img/01-1.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <a class="logo" href="">QQ</a>
+    <div class="leftlunbo">
+        <img src="https://cdn-go.cn/qq-web/zc.qq.com/latest/v3/img/01-1.jpg" >
+    </div>
+    <script>
+        // const leftlunbo=$('.leftlunbo');
+        var jpgArray=new Array;
+        jpgArray[0]="https://cdn-go.cn/qq-web/zc.qq.com/latest/v3/img/01-1.jpg";
+        jpgArray[1]="https://cdn-go.cn/qq-web/zc.qq.com/latest/v3/img/01-2.jpg";
+        jpgArray[2]="https://cdn-go.cn/qq-web/zc.qq.com/latest/v3/img/01-3.jpg";
+        jpgArray[3]="https://cdn-go.cn/qq-web/zc.qq.com/latest/v3/img/01-4.jpg";
+        var index=0;
+        setInterval(function(){
+            if(index>3)index=0;
+            $('.leftlunbo img').attr('src',jpgArray[index++]);
+        },2000)
+        
+        
+    </script>
+        <legend>欢迎注册QQ</legend>
+        <form action="http://localhost/nz1903item/php/registry.php" method="post">
+            <p><label for="">用户姓名：</label><input type="text" name="username" class="username"><span></span></p>
+            <p><label for="">用户密码：</label><input type="password" name="password"></p>
+            <p><label for="">确认密码：</label><input type="password" name="repass"></p>
+            <p><label for="">用户邮箱：</label><input type="text" name="email"></p>
+            <p><input type="submit" value="用户注册" name="submit"></p>
+        </form>
+    
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://localhost/phpJop/daojucheng/src/script/registry.js"></script>
+</body>
+
+</html>
