@@ -100,5 +100,5 @@ gulp.task('uglifyimg', () => {
 
 
 gulp.task('default', () => {
-    watch(['src/*.html', 'src/sass/*.scss', 'src/script/*.js'], gulp.parallel('uglifyhtml', 'compilesass', 'uglifyjs'));
+    watch(['src/*.html', 'src/sass/*.scss', 'src/script/*.js','src/img/*.{jpg,png,gif}'], gulp.parallel('uglifyhtml', 'compilesass', 'uglifyjs','uglifyimg'));
 });

@@ -1,147 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>首页</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- <link rel="stylesheet" href="css/comm.css"> -->
+  </head>
 
-<body >
-    <div class="header" >
-        <div class="wrap">
-            <div class="fl lefthead">
-                <a href=""><s class="i_sp i_mobile"></s>手机版</a>
-                <i>|</i>
-                <a href="">Q币充值</a>
+  <body>
+    <!-- 头部 -->
+    <div class="header">
+      <div class="wrap">
+        <div class="fl lefthead">
+          <a href=""><s class="i_sp i_mobile"></s>手机版</a>
+          <i>|</i>
+          <a href="">Q币充值</a>
+        </div>
+        <div class="fr righthead">
+          <div class="righthead_menu">
+            <a href="javascript:;" class="i_sp game_menu" id="game_menu"
+              >游戏导航</a
+            >
+          </div>
+          <iframe
+            scrolling="no"
+            frameborder="0"
+            src="//daoju.qq.com/mall/game_area.htm?v=20131108"
+            allowtransparency="true"
+            class="game_pop"
+            style="width: 828px;"
+          ></iframe>
+          <i>|</i>
+          <a href="">帮助中心</a>
+          <i>|</i>
+          <a href="">个人中心</a>
+          <i>|</i>
+          <a href="">我的订单</a>
+          <i>|</i>
+          <div>
+            <div class="login fr">
+              您还未登录，请<a href="login.html">登录</a>
             </div>
-            <div class="fr righthead">
-                <div class="righthead_menu">
-                    <a href="javascript:;" class="i_sp game_menu" id="game_menu">游戏导航</a>
-                </div>
-                <iframe scrolling="no" frameborder="0"  src="//daoju.qq.com/mall/game_area.htm?v=20131108" allowtransparency="true" class="game_pop" style="width: 828px"></iframe>
-                <i>|</i>
-                <a href="">帮助中心</a>
-                <i>|</i>
-                <a href="">个人中心</a>
-                <i>|</i>
-                <a href="">我的订单</a>
-                <i>|</i>
-                <div>
-                    <div>
-                        您还未登录，请
-                        <a href="login.html">登录</a>
-                    </div>
-                    <div>
-                        <p>欢迎你，
-                            <a href="">
-                                <span></span>
-                            </a>
-                            &nbsp;&nbsp;&nbsp;
-                            <a href="">退出</a>
-                        </p>
-                    </div>
-                    
-                </div>
-
+            <div style="display: none;">
+              <p>
+                欢迎你，
+                <a href="">
+                  <span></span>
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="">退出</a>
+              </p>
             </div>
-            <!-- <a href="registry.html">请注册</a>
+          </div>
+        </div>
+        <!-- <a href="registry.html">请注册</a>
             <a href="login.html">请登录</a> -->
-        </div>
-        
+      </div>
     </div>
-    <div></div>
-    <div class="nav"></div>
-    <div class="banner">
-        <div class="menu">
-            <ul>
-                <li>
-                    <a href="#">家用电器</a>
-                </li>
-                <li>
-                    <a href="#">手机</a><span>/</span><a href="#">运营商</a><span>/</span><a href="#">数码</a>
-                </li>
-                <li>
-                    <a href="#">电脑</a><span>/</span><a href="#">办公</a>
-                </li>
-                <li>
-                    <a href="#">家居</a><span>/</span><a href="#">家具</a><span>/</span><a href="#">家装</a><span>/</span><a
-                        href="#">厨具</a>
-                </li>
-                <li>
-                    <a href="#">男装</a><span>/</span><a href="#">女装</a><span>/</span><a href="#">童装</a><span>/</span><a
-                        href="#">内衣</a>
-                </li>
-                <li>
-                    <a href="#">美妆</a><span>/</span><a href="#">个护清洁</a><span>/</span><a href="#">宠物</a>
-                </li>
-                <li>
-                    <a href="#">女鞋</a><span>/</span><a href="#">箱包</a><span>/</span><a href="#">钟表</a><span>/</span><a
-                        href="#">珠宝</a>
-                </li>
-                <li>
-                    <a href="#">男鞋</a><span>/</span><a href="#">运动</a><span>/</span><a href="#">户外</a>
-                </li>
-                <li>
-                    <a href="#">房产</a><span>/</span><a href="#">汽车</a><span>/</span><a href="#">汽车用品</a>
-                </li>
-                <li>
-                    <a href="#">母婴</a><span>/</span><a href="#">玩具乐器</a>
-                </li>
-                <li>
-                    <a href="#">食品</a><span>/</span><a href="#">酒类</a><span>/</span><a href="#">生鲜</a><span>/</span><a
-                        href="#">特产</a>
-                </li>
-                <li>
-                    <a href="#">艺术</a><span>/</span><a href="#">礼品鲜花</a><span>/</span><a href="#">农资绿植</a>
-                </li>
-                <li>
-                    <a href="#">医药保健</a><span>/</span><a href="#">计生情趣</a>
-                </li>
-                <li>
-                    <a href="#">图书</a><span>/</span><a href="#">文娱</a><span>/</span><a href="#">教育</a><span>/</span><a
-                        href="#">电子书</a>
-                </li>
-                <li>
-                    <a href="#">机票</a><span>/</span><a href="#">酒店</a><span>/</span><a href="#">旅游</a><span>/</span><a
-                        href="#">生活</a>
-                </li>
-                <li>
-                    <a href="#">理财</a><span>/</span><a href="#">众筹</a><span>/</span><a href="#">白条</a><span>/</span><a
-                        href="#">保险</a>
-                </li>
-                <li>
-                    <a href="#">安装</a><span>/</span><a href="#">维修</a><span>/</span><a href="#">清洗</a><span>/</span><a
-                        href="#">二手</a>
-                </li>
-                <li>
-                    <a href="#">工业品</a>
-                </li>
-            </ul>
-            <div class="cartlist">
-                <div class="item"><a href="list.html">模拟跳转商品列表页</a></div>
-                <div class="item">第二块内容</div>
-                <div class="item">第三块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
-                <div class="item">第四块内容</div>
+    <!-- 搜索框 -->
+    <div class="search">
+      <div class="wrap clearfix">
+        <!-- logo -->
+        <a href="" class="bg_sp logo fl"></a>
+        <!-- 搜索栏 -->
+        <div class="s_bar fl">
+          <!-- 范围 -->
+          <div class="s_text fl">
+            <!-- 左边导航 -->
+            <div class="s_menu fl">
+              <a href="" class="aaa">
+                <s class="i_sp"></s>
+                <span>选择游戏</span>
+              </a>
+              <div class="choose_sub">
+                <dl>
+                  <dt>角色扮演：</dt>
+                  <dd class="clearfix">
+                    <a biz="age" href="#">上古世纪</a><i>|</i>
+                    <a biz="mxd2" href="#">冒险岛2</a><i>|</i>
+                    <a biz="yljd" href="#">御龙在天经典版</a><i>|</i>
+                    <a biz="fo" href="#">QQ幻想</a><i>|</i>
+                    <a biz="dzs" href="#">斗战神</a><i>|</i>
+                    <a biz="dnf" href="#">地下城与勇士</a><i>|</i>
+                    <a biz="xy" href="#">轩辕</a><i>|</i>
+                    <a biz="tiantang2" href="#">天堂2</a><i>|</i>
+                    <a biz="xxz" href="#">仙侠传</a><i>|</i>
+                    <a biz="ffo" href="#">自由幻想</a><i>|</i>
+                    <a biz="tiantang" href="#">天堂</a><i>|</i>
+                    <a biz="hxsj" href="#">幻想世界</a><i>|</i>
+                    <a biz="sg" href="#">QQ三国</a><i>|</i>
+                    <a biz="jf" href="#">疾风之刃</a><i>|</i>
+                    <a biz="dj2" href="#">刀剑2</a><i>|</i>
+                    <a biz="bns" href="#">剑灵</a><i>|</i>
+                    <a biz="yl" href="#">御龙在天</a><i>|</i>
+                    <a biz="wuxia" href="#">天涯明月刀</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>竞技游戏：</dt>
+                  <dd class="clearfix">
+                    <a biz="nba2k2" href="#">NBA2KOL2</a><i>|</i>
+                    <a biz="nfsol" href="#">极品飞车OL</a><i>|</i>
+                    <a biz="zzlt" href="#">战争雷霆</a><i>|</i>
+                    <a biz="nba2k" href="#">NBA2KOL</a><i>|</i>
+                    <a biz="codol" href="#">CODOL使命召唤Online</a><i>|</i>
+                    <a biz="lol" href="#">英雄联盟</a><i>|</i>
+                    <a biz="cf" href="#">穿越火线</a><i>|</i>
+                    <a biz="tps" href="#">枪神纪</a><i>|</i>
+                    <a biz="nz" href="#">逆战</a><i>|</i>
+                    <a biz="fifa" href="#">FIFA OL3</a><i>|</i>
+                    <a biz="fo4" href="#">FIFA OL4</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>休闲游戏：</dt>
+                  <dd class="clearfix">
+                    <a biz="x52" href="#">炫舞时代</a><i>|</i>
+                    <a biz="speed" href="#">飞车</a><i>|</i>
+                    <a biz="x5" href="#">炫舞</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>网页游戏：</dt>
+                  <dd class="clearfix">
+                    <a biz="bydr" href="#">捕鱼达人3D</a><i>|</i>
+                    <a biz="cos" href="#">英魂之刃</a><i>|</i>
+                    <a biz="hyol" href="#">火影忍者Online</a><i>|</i>
+                    <a biz="bl" href="#">部落守卫战(网页版)</a><i>|</i>
+                    <a biz="fight" href="#">宠物大乐斗</a><i>|</i>
+                    <a biz="zg" href="#">烽火战国</a>
+                  </dd>
+                </dl>
+              </div>
             </div>
+            <!-- 搜索框 -->
+            <input type="text" value="请选择游戏搜索道具" />
+          </div>
+          <!-- 按钮放大镜 -->
+          <button class="b_sp btn">搜索</button>
+          <div class="words">
+            <p></p>
+          </div>
         </div>
+        <!-- 右侧二维码 -->
+        <div class="bg_sp wx fr bg_znq">
+          <a
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 129px;
+              height: 108px;
+              z-index: 32;
+              display: block;
+            "
+            href="//daoju.qq.com/malldownload/index.html"
+          ></a>
+        </div>
+      </div>
     </div>
-</body>
-<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://localhost/phpJop/daojucheng/src/script/index.js"></script>
+    <!-- 导航 -->
+    <div class="nav">
+      <div class="wrap clearfix">
+        <div class="all_game fl">
+          <a class="show_game" href="javascript:;" title="所有游戏分类"
+            ><s class="i_sp i_game_down"></s>
+            <p>所有游戏分类</p></a
+          >
+          <div class="box">
+            <dl class="top">
+              <dt><s class="i_sp i_game"></s>所有游戏分类</dt>
+            </dl>
+            <!-- 热门游戏 -->
+            <dl class="bot">
+              <dt>
+                <s class="i_sp i_mobilegame"></s>热门游戏<i class="i_sp"></i>
+              </dt>
+              <dd class="col_3">
+                <div class="inner clearfix">
+                  <div class="dev">
+                    <a title="NBA2KOL2" href="//daoju.qq.com/nba2k2/"
+                      >NBA2KOL2</a
+                    >
+                    <a title="冒险岛2" href="//daoju.qq.com/mxd2/">冒险岛2</a>
+                    <a title="火影忍者Online" href="//daoju.qq.com/hyol/"
+                      >火影忍者Online</a
+                    >
+                    <a title="NBA2KOL" href="//daoju.qq.com/nba2k/">NBA2KOL</a>
+                    <a title="地下城与勇士" href="//daoju.qq.com/dnf/"
+                      >地下城与勇士</a
+                    >
+                    <a title="CODOL使命召唤Online" href="//daoju.qq.com/codol/"
+                      >CODOL使命召唤Online</a
+                    >
+                    <a title="QQ三国" href="//daoju.qq.com/sg/">QQ三国</a>
+                    <a title="英雄联盟" href="//daoju.qq.com/lol/">英雄联盟</a>
+                  </div>
+                  <div class="dev">
+                    <a title="穿越火线" href="//daoju.qq.com/cf/">穿越火线</a>
+                    <a title="剑灵" href="//daoju.qq.com/bns/">剑灵</a>
+                    <a title="御龙在天" href="//daoju.qq.com/yl/">御龙在天</a>
+                    <a title="逆战" href="//daoju.qq.com/nz/">逆战</a>
+                    <a title="FIFA OL3" href="//daoju.qq.com/fifa/">FIFA OL3</a>
+                    <a title="FIFA OL4" href="//daoju.qq.com/fo4/">FIFA OL4</a>
+                    <a title="飞车" href="//daoju.qq.com/speed/">飞车</a>
+                    <a title="天涯明月刀" href="//daoju.qq.com/wuxia/"
+                      >天涯明月刀</a
+                    >
+                  </div>
+                  <div class="dev">
+                    <a title="炫舞" href="//daoju.qq.com/x5/">炫舞</a>
+                    <!--                        <a href="//daoju.qq.com/nba2k2">NBA2K2</a>-->
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <!-- 角色扮演 -->
+            <dl class="bot">
+              <dt>
+                <s class="i_sp i_rpggame"></s>角色扮演<i class="i_sp"></i>
+              </dt>
+              <dd class="col_3">
+                <div class="inner clearfix">
+                  <div class="dev">
+                    <a title="上古世纪" href="//daoju.qq.com/age/">上古世纪</a>
+                    <a title="冒险岛2" href="//daoju.qq.com/mxd2/">冒险岛2</a>
+                    <a title="御龙在天经典版" href="//daoju.qq.com/yljd/"
+                      >御龙在天经典版</a
+                    >
+                    <a title="QQ幻想" href="//daoju.qq.com/fo/">QQ幻想</a>
+                    <a title="斗战神" href="//daoju.qq.com/dzs/">斗战神</a>
+                    <a title="地下城与勇士" href="//daoju.qq.com/dnf/"
+                      >地下城与勇士</a
+                    >
+                    <a title="轩辕" href="//daoju.qq.com/xy/">轩辕</a>
+                    <a title="天堂2" href="//daoju.qq.com/tiantang2/">天堂2</a>
+                  </div>
+                  <div class="dev">
+                    <a title="仙侠传" href="//daoju.qq.com/xxz/">仙侠传</a>
+                    <a title="自由幻想" href="//daoju.qq.com/ffo/">自由幻想</a>
+                    <a title="天堂" href="//daoju.qq.com/tiantang/">天堂</a>
+                    <a title="幻想世界" href="//daoju.qq.com/hxsj/">幻想世界</a>
+                    <a title="QQ三国" href="//daoju.qq.com/sg/">QQ三国</a>
+                    <a title="疾风之刃" href="//daoju.qq.com/jf/">疾风之刃</a>
+                    <a title="刀剑2" href="//daoju.qq.com/dj2/">刀剑2</a>
+                    <a title="剑灵" href="//daoju.qq.com/bns/">剑灵</a>
+                  </div>
+                  <div class="dev">
+                    <a title="御龙在天" href="//daoju.qq.com/yl/">御龙在天</a>
+                    <a title="天涯明月刀" href="//daoju.qq.com/wuxia/">天涯明月刀</a>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <!-- 竞技游戏 -->
+            <dl class="bot">
+              <dt>
+                <s class="i_sp i_tournament"></s>竞技游戏<i class="i_sp"></i>
+              </dt>
+              <dd class="col_2">
+                <div class="inner clearfix">
+                  <div class="dev">
+                    <a title="NBA2KOL2" href="//daoju.qq.com/nba2k2/"
+                      >NBA2KOL2</a
+                    >
+                    <a title="极品飞车OL" href="//daoju.qq.com/nfsol/"
+                      >极品飞车OL</a
+                    >
+                    <a title="战争雷霆" href="//daoju.qq.com/zzlt/">战争雷霆</a>
+                    <a title="NBA2KOL" href="//daoju.qq.com/nba2k/">NBA2KOL</a>
+                    <a title="CODOL使命召唤Online" href="//daoju.qq.com/codol/"
+                      >CODOL使命召唤Online</a
+                    >
+                    <a title="英雄联盟" href="//daoju.qq.com/lol/">英雄联盟</a>
+                    <a title="穿越火线" href="//daoju.qq.com/cf/">穿越火线</a>
+                    <a title="枪神纪" href="//daoju.qq.com/tps/">枪神纪</a>
+                  </div>
+                  <div class="dev">
+                    <a title="逆战" href="//daoju.qq.com/nz/">逆战</a>
+                    <a title="FIFA OL3" href="//daoju.qq.com/fifa/">FIFA OL3</a>
+                    <a title="FIFA OL4" href="//daoju.qq.com/fo4/">FIFA OL4</a>
+                    <!--                        <a href="//daoju.qq.com/nba2k2">NBA2K2</a>-->
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <!-- 休闲游戏 -->
+            <dl class="bot">
+              <dt>
+                <s class="i_sp i_leisure"></s>休闲游戏<i class="i_sp"></i>
+              </dt>
+              <dd class="col_1">
+                <div class="inner clearfix">
+                  <div class="dev">
+                    <a title="炫舞时代" href="//daoju.qq.com/x52/">炫舞时代</a>
+                    <a title="飞车" href="//daoju.qq.com/speed/">飞车</a>
+                    <a title="炫舞" href="//daoju.qq.com/x5/">炫舞</a>
+                    <!--                        <a href="//daoju.qq.com/nba2k2">NBA2K2</a>-->
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <!-- 网页游戏 -->
+            <dl class="bot">
+              <dt>
+                <s class="i_sp i_webgame"></s>网页游戏<i class="i_sp"></i>
+              </dt>
+              <dd class="col_1">
+                <div class="inner clearfix">
+                  <div class="dev">
+                    <a title="捕鱼达人3D" href="//daoju.qq.com/bydr/"
+                      >捕鱼达人3D</a
+                    >
+                    <a title="英魂之刃" href="//daoju.qq.com/cos/">英魂之刃</a>
+                    <a title="火影忍者Online" href="//daoju.qq.com/hyol/"
+                      >火影忍者Online</a
+                    >
+                    <a title="部落守卫战(网页版)" href="//daoju.qq.com/bl/"
+                      >部落守卫战(网页版)</a
+                    >
+                    <a title="宠物大乐斗" href="//daoju.qq.com/fight/"
+                      >宠物大乐斗</a
+                    >
+                    <a title="烽火战国" href="//daoju.qq.com/zg/">烽火战国</a>
+                    <!--                        <a href="//daoju.qq.com/nba2k2">NBA2K2</a>-->
+                  </div>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <ul>
+          <li><a href="">首页</a></li>
+          <li><a href="">活动中心</a></li>
+          <li><a href="">聚诚品</a></li>
+          <li><a href="">手游中心</a></li>
+          <li><a href="">聚豆中心</a></li>
+          <li><a href="">个人中心</a></li>
+        </ul>
+        <div class="cart fr">
+          <a href="">
+            <i>0</i>
+            <s class="i_sp"></s>
+            购物车
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="wrap lunbo">
+      <div class="lunbo1">
+        <ul>
+          <li><a href=""><img src="https://game.gtimg.cn/images/daojushop/uploads/ad/202006/20200603104908_393858.jpg" alt=""></a><p>和平精英天降潮鸭公仔</p></li>
+          <li><a href=""><img src="https://game.gtimg.cn/images/daojushop/uploads/ad/202005/20200529122255_319729.jpg" alt=""></a><p>和平精英天降潮鸭公仔</p></li>
+          <li><a href=""><img src="https://game.gtimg.cn/images/daojushop/uploads/ad/202005/20200527162809_670776.jpg" alt=""></a><p>和平精英天降潮鸭公仔</p></li>
+          <li><a href=""><img src="https://game.gtimg.cn/images/daojushop/uploads/ad/202003/20200324163348_557757.jpg" alt=""></a><p>和平精英天降潮鸭公仔</p></li>
+          <li><a href=""><img src="https://game.gtimg.cn/images/daojushop/uploads/ad/202006/20200602154838_549189.jpg" alt=""></a><p>和平精英天降潮鸭公仔</p></li>
+        </ul>
+        <ol>
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+
+  </body>
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://localhost/phpJop/daojucheng/src/script/index.js"></script>
 </html>
