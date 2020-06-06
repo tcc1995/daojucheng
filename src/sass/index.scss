@@ -599,6 +599,7 @@ dt {
     width: 230px;
     height: 54px;
     background: #333;
+    cursor: pointer;
     a {
       // display: inline-block;
       // text-align: center;
@@ -634,21 +635,21 @@ dt {
 }
 
 .lunbo {
-  // width: 770px;
-  // height: 330px;
-  // position: relative;
+  // 轮播
   .lunbo1 {
     width: 770px;
-    // overflow: hidden;
+    height: 330px;
+    overflow: hidden;
     margin-left: 190px;
+    position: relative;
+    float: left;
     ul {
-      width: 4620px;
-      height: 330px;
-      // margin-left: 190px;
-      position: relative;
+      position: absolute;
+      left: 0px;
+      top: 0px;
       li {
         float: left;
-        // width: 770px;
+        position: relative;
         img {
           width: 770px;
           height: 330px;
@@ -664,11 +665,137 @@ dt {
           bottom: 0;
           left: 0;
           background: rgba($color: #000000, $alpha: 0.3);
+          // z-index: 50px;
         }
       }
     }
-    ol{
+    ol li.active {
+      background-color: #f74a4a;
+    }
+    ol {
       position: absolute;
-    };
+      bottom: 10px;
+      right: 20px;
+      li {
+        width: 12px;
+        height: 12px;
+        background: #fff;
+        margin-left: 6px;
+        float: left;
+      }
+    }
+    .left_fake,
+    .right_fake {
+      font-size: 60px;
+      color: #fff;
+      text-decoration: none;
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      display: none;
+      z-index: 20;
+    }
+
+    .left_fake {
+      left: 25px;
+    }
+
+    .right_fake {
+      right: 25px;
+    }
+  }
+  // 右侧
+  .right_lunbo{
+    background: #fff;
+    h5{
+      font-weight: 800;
+      line-height: 20px;
+      padding-bottom: 2px;
+    }
+    .lunbo_top{
+      
+      width: 230px;
+      height: 205px;
+      .lunbo_t1{
+        // width: 230px;
+        // height: 87px;
+        // border-bottom: 1px solid #efefef ;
+        // padding: 15px 10px;
+        .t1_box{
+          margin: 0 5px;
+          padding: 15px 10px;
+          padding-right: 0;
+          height: 56px;
+          overflow: hidden;
+          border-bottom: 1px solid #efefef ;
+          img{
+            display: block;
+            width: 46px;
+            height: 46px;
+            float: left;
+            // position: relative;
+            top: 5px;
+          }
+          p{
+            margin-left: 55px;
+            line-height: 18px;
+            // text-align: center;
+          }
+        }
+        
+      }
+      
+      .lunbo_t2{
+        padding: 7px 0 10px 10px;
+        margin: 0 5px;
+        height: 100px;
+        width: 210px;
+        overflow: hidden;
+        border-bottom: 1px solid #efefef ;
+        li{
+          float: left;
+          width: 50px;
+          margin: 5px 20px 0 0;
+          text-align: center;
+          cursor: pointer;
+          span{
+            display: block;
+            line-height: 20px;
+            height: 20px;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+    .lunbo_button{
+      padding: 7px 0 10px 10px;
+      margin: 0 5px;
+      // height: 108px;
+      width: 210px;
+      overflow: hidden;
+      .lunbo_bu2{
+        li{
+          line-height: 22px;
+          height: 22px;
+          overflow: hidden;
+          float: left;
+          a{
+            color: #666;
+            float: left;
+            width: 160px;
+            height: 22px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          i{
+            float: right;
+            width: 40px;
+            font-style: normal;
+            color: #999;
+            text-align: left;
+          }
+        }
+      }
+    }
   }
 }

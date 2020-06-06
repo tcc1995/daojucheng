@@ -681,6 +681,7 @@ dt {
   width: 230px;
   height: 54px;
   background: #333;
+  cursor: pointer;
 }
 
 .nav .cart a {
@@ -716,17 +717,22 @@ dt {
 
 .lunbo .lunbo1 {
   width: 770px;
+  height: 330px;
+  overflow: hidden;
   margin-left: 190px;
+  position: relative;
+  float: left;
 }
 
 .lunbo .lunbo1 ul {
-  width: 4620px;
-  height: 330px;
-  position: relative;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 .lunbo .lunbo1 ul li {
   float: left;
+  position: relative;
 }
 
 .lunbo .lunbo1 ul li img {
@@ -747,6 +753,132 @@ dt {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.lunbo .lunbo1 ol li.active {
+  background-color: #f74a4a;
+}
+
 .lunbo .lunbo1 ol {
   position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.lunbo .lunbo1 ol li {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  margin-left: 6px;
+  float: left;
+}
+
+.lunbo .lunbo1 .left_fake,
+.lunbo .lunbo1 .right_fake {
+  font-size: 60px;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  display: none;
+  z-index: 20;
+}
+
+.lunbo .lunbo1 .left_fake {
+  left: 25px;
+}
+
+.lunbo .lunbo1 .right_fake {
+  right: 25px;
+}
+
+.lunbo .right_lunbo {
+  background: #fff;
+}
+
+.lunbo .right_lunbo h5 {
+  font-weight: 800;
+  line-height: 20px;
+  padding-bottom: 2px;
+}
+
+.lunbo .right_lunbo .lunbo_top {
+  width: 230px;
+  height: 205px;
+}
+
+.lunbo .right_lunbo .lunbo_top .lunbo_t1 .t1_box {
+  margin: 0 5px;
+  padding: 15px 10px;
+  padding-right: 0;
+  height: 56px;
+  overflow: hidden;
+  border-bottom: 1px solid #efefef;
+}
+
+.lunbo .right_lunbo .lunbo_top .lunbo_t1 .t1_box img {
+  display: block;
+  width: 46px;
+  height: 46px;
+  float: left;
+  top: 5px;
+}
+
+.lunbo .right_lunbo .lunbo_top .lunbo_t1 .t1_box p {
+  margin-left: 55px;
+  line-height: 18px;
+}
+
+.lunbo .right_lunbo .lunbo_top .lunbo_t2 {
+  padding: 7px 0 10px 10px;
+  margin: 0 5px;
+  height: 100px;
+  width: 210px;
+  overflow: hidden;
+  border-bottom: 1px solid #efefef;
+}
+
+.lunbo .right_lunbo .lunbo_top .lunbo_t2 li {
+  float: left;
+  width: 50px;
+  margin: 5px 20px 0 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.lunbo .right_lunbo .lunbo_top .lunbo_t2 li span {
+  display: block;
+  line-height: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.lunbo .right_lunbo .lunbo_button {
+  padding: 7px 0 10px 10px;
+  margin: 0 5px;
+  width: 210px;
+  overflow: hidden;
+}
+
+.lunbo .right_lunbo .lunbo_button .lunbo_bu2 li {
+  line-height: 22px;
+  height: 22px;
+  overflow: hidden;
+  float: left;
+}
+
+.lunbo .right_lunbo .lunbo_button .lunbo_bu2 li a {
+  color: #666;
+  float: left;
+  width: 160px;
+  height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lunbo .right_lunbo .lunbo_button .lunbo_bu2 li i {
+  float: right;
+  width: 40px;
+  font-style: normal;
+  color: #999;
+  text-align: left;
 }
