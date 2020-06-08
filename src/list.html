@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>商品列表页</title>
-    <link rel="stylesheet" href="css/pagination.css">
-    <link rel="stylesheet" href="css/list.css">
-</head>
+    <link rel="stylesheet" href="css/pagination.css" />
+    <link rel="stylesheet" href="css/list.css" />
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+  </head>
 
-<body>
+  <body>
     <!-- <div class="box" style="height:2000px; background:#ccc;width:1190px;margin:0 auto;">
         在Web应用程序中，系统的瓶颈常在于系统的响应速度。如果系统响应速度过慢，用户就会出现埋怨情绪，系统的价值也因此会大打折扣。因此，提高系统响应速度，是非常重要的。
         懒加载：懒加载其实就是延时加载，即当对象需要用到的时候再去加载。
@@ -17,24 +17,304 @@
         web方面：进入可视区，加载。
 
     </div> -->
+    <!-- 头部 -->
+    <div class="header">
+      <div class="wrap">
+        <div class="fl lefthead">
+          <a href=""><s class="i_sp i_mobile"></s>手机版</a>
+          <i>|</i>
+          <a href="">Q币充值</a>
+        </div>
+        <div class="fr righthead">
+          <div class="righthead_menu">
+            <a href="javascript:;" class="i_sp game_menu" id="game_menu"
+              >游戏导航</a
+            >
+          </div>
+          <iframe
+            scrolling="no"
+            frameborder="0"
+            src="//daoju.qq.com/mall/game_area.htm?v=20131108"
+            allowtransparency="true"
+            class="game_pop"
+            style="width: 828px;"
+          ></iframe>
+          <i>|</i>
+          <a href="">帮助中心</a>
+          <i>|</i>
+          <a href="">个人中心</a>
+          <i>|</i>
+          <a href="">我的订单</a>
+          <i>|</i>
+          <div>
+            <div class="login fr">
+              您还未登录，请<a href="" class="login_a">登录</a>
+              <!-- <div class="cap"></div>
+                <div class="register"> -->
+            </div>
+            <div style="display: none;">
+              <p>
+                欢迎你，
+                <a href="">
+                  <span></span>
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="">退出</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="registry.html">请注册</a>
+              <a href="login.html">请登录</a> -->
+      </div>
+    </div>
+    <!-- 主题栏 -->
+    <div class="menu">
+      <!-- 搜索栏 -->
+      <div class="search">
+        <div class="wrap searchbox">
+          <div class="fl logobox">
+            <a href="" class="navico">道聚城</a>
+          </div>
+          <div class="sbar fl">
+            <div class="navico stext">
+              <a href="" class="navico">搜索</a>
+              <input
+                type="text"
+                value="输入道具进行搜索"
+                attr_default="输入道具进行搜索"
+                report_tag="mall.lol.index.categories_new"
+              />
+            </div>
+          </div>
+          <div class="logogame fl">
+            <a href="" class="navico">英雄联盟</a>
+          </div>
+        </div>
+      </div>
+      <!-- 主导航栏 -->
+      <div class="nav">
+        <div class="wrap navico navwrap">
+          <ul class="fl clearfix" style="overflow: hidden;">
+            <li class="navico">
+              <a
+                href="/lol/index.shtml?ADTAG=innercop.lol.SY.sy_new"
+                class="js_btn_click_report"
+                >首页</a
+              >
+            </li>
+            <li
+              class="navico current"
+              style="background-position: -285px -5px;"
+            >
+              <a
+                href="/lol/list/shoppinglist.shtml?ADTAG=innercop.lol.SY.shoppinglist_new"
+                class="js_btn_click_report"
+                style="
+                  font-weight: bold;
+                  color: #fef7ec;
+                  text-shadow: 1px 3px 3px #bf4d00;
+                "
+                >商品列表</a
+              >
+            </li>
+            <li class="navico">
+              <a
+                target="_blank"
+                href="/mall/actcenter.shtml?flag=lol&amp;ADTAG=innercop.lol.SY.actlist_new"
+                class="js_btn_click_report"
+                >活动专区</a
+              >
+            </li>
+            <li class="navico">
+              <a
+                target="_blank"
+                href="//daoju.qq.com/mall/tao.shtml?flag=lol&amp;ADTAG=innercop.lol.SY.tao_new"
+                class="js_btn_click_report"
+                >限时折扣</a
+              >
+            </li>
+            <li class="navico">
+              <a
+                target="_blank"
+                href="/mall/judou.shtml?sBizCode=lol"
+                class="js_btn_click_report"
+                >聚豆乐园</a
+              >
+            </li>
+            <li class="navico">
+              <a
+                target="_blank"
+                href="//mall.qq.com/lol/?e_code=305545&amp;ADTAG=innercop.lol.SY.zhoubian"
+                class="js_btn_click_report"
+                >周边商城</a
+              >
+            </li>
+            <li class="navico">
+              <a
+                target="_blank"
+                href="/mall/center.shtml?flag=lol&amp;ADTAG=innercop.lol.SY.center_new"
+                class="js_btn_click_report"
+                >个人中心</a
+              >
+            </li>
+          </ul>
+          <div class="fr nav-cart">
+            <a
+              href="/lol/cart.shtml?ADTAG=innercop.lol.SY.paylist_new"
+              class="btn-cart"
+              title="购物车"
+            >
+              <i id="cartNum">（0）</i>
+              <s class="navico i-cart"></s>购物车
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 子导航 -->
+      <div id="blk_nav_cate" class="subnav" style="visibility: visible;">
+        <div class="wrap subwrap ">
+          <div class="subnavlist ">
+            <ul style="height: 55px; overflow: hidden;">
+              <li id="cate_nav_0" class="all-class current">
+                <a
+                  href="/lol/list/shoppinglist.shtml?ADTAG=innercop.lol.SY.shoppinglist_new"
+                  class="dj-link"
+                  title="全部分类" style="color: #36ab87;border-bottom: 2px solid #36ab87;"
+                  >全部分类</a
+                >
+              </li>
+              <li id="cate_nav_16">
+                <a
+                  href="/lol/list/16-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_16"
+                  class="dj-link"
+                  >英雄</a
+                >
+              </li>
+              <li id="cate_nav_393">
+                <a
+                  href="/lol/list/393-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_393"
+                  class="dj-link"
+                  >表情</a
+                >
+              </li>
+              <li id="cate_nav_427">
+                <a
+                  href="/lol/list/427-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_427"
+                  class="dj-link"
+                  >海克斯及其他</a
+                >
+              </li>
+              <li id="cate_nav_439">
+                <a
+                  href="/lol/list/439-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_439"
+                  class="dj-link"
+                  >云顶之弈</a
+                >
+              </li>
+              <li id="cate_nav_17">
+                <a
+                  href="/lol/list/17-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_17"
+                  class="dj-link"
+                  >皮肤</a
+                >
+              </li>
+              <li id="cate_nav_18">
+                <a
+                  href="/lol/list/18-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_18"
+                  class="dj-link"
+                  >道具</a
+                >
+              </li>
+              <li id="cate_nav_19">
+                <a
+                  href="/lol/list/19-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_19"
+                  class="dj-link"
+                  >守卫眼皮肤</a
+                >
+              </li>
+              <li id="cate_nav_136">
+                <a
+                  href="/lol/list/136-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_136"
+                  class="dj-link"
+                  >道具包</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 面包屑 -->
+    <div class="wrap location-box clearfix">
+        <div class="fl">您现在的位置：<a href="/lol">英雄联盟</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<span id="loc_list_cate">
+                            全部分类
+                        </span></div>
+        <a id="role—unbind" class="fr location-user" href="javascript:;" style="display: none;">
+            <span>亲爱的召唤师，欢迎登录</span>
+        </a>
+        <a id="role—binded" class="fr location-user" href="javascript:;" style="display: none;">
+            <div class="fr role_bind" data-action="bind-role">召唤师信息：<span id="role-binded-rolename" class="rolename"></span><span id="role-binded-area"></span><span id="role-binded-server"></span><em class="comico btn-filter-down"></em></div>
+        </a>
+    </div>
+    <!-- 内容区 -->
+    <div class="wrap layout">
+        <div class="sidebar fl"></div>
+        <div class="maincont fr">
+            <!-- 筛选栏 -->
+            <div class="filter-box">
+                <div class="filter-item clearfix">
+                    <div id="ct_list_search_bar" class="fl"><label>关键字：</label><input type="text" id="ipt_list_search_keyword" class="input-txt" style="margin-left:3px"></div>
+                    <div id="ct_list_price_bar" class="fl ml20" style="text-align: left;">
+                        价格区间(QB)：<input id="ipt_list_price_from" type="text" class="input-area-txt"><label> -</label>
+                        <input id="ipt_list_price_to" type="text" class="input-area-txt">
+                    </div>
+                    <div class="fl"><a href="#" class="btn-sure ml10" id="btn_list_search" title="确定">确定</a></div>
+                </div>
+                <div class="filterlist mt20     ">
+                    <div class="order-span fl">
+                        <a class="current" href="javascript:;" data-order="dtShowBegin" data-order-default="desc" data-order-type="desc">上架时间</a>
+                        <a href="javascript:;" data-order="lTotalBuyNum" data-order-default="desc" class="" data-order-type="desc">销量<em class="comico btn-filter-down" data-default-arrow="btn-filter-down"></em></a>
+                        <a href="javascript:;" data-order="iPrice" data-order-default="asc" class="" data-order-type="asc">价格<em class="comico btn-filter-up" data-default-arrow="btn-filter-up"></em></a>
+                    </div>
+                    <p id="ct_list_mine_bar" class="fm-check fl">
+                        <i data-switcher="1|0" class="comico i-checkbox" id="chk_list_have_no" data-value="0"></i>
+                        <label data-switcher="1|0" style="cursor:pointer">显示未拥有</label>
+                        <i data-switcher="0|1" class="comico i-checkbox" id="chk_list_have_yes" data-value="1"></i>
+                        <label data-switcher="0|1" style="cursor:pointer">显示已拥有</label>
+                    </p>
+                </div>
+            </div>
+            <!-- 筛选列表 -->
+            <div class="list">
+
+                <ul></ul>
+            </div>
+            <div class="pagelist">
+                <div class="m-style page"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
     <button>默认排序</button>
     <button>升序排序</button>
     <button>降序排序</button>
-    <div class="list">
-        <ul>
-
-        </ul>
+    <!-- <div class="list">
+      <ul></ul>
     </div>
     <div class="pagelist">
-        <div class="m-style page">
-        </div>
-    </div>
+      <div class="m-style page"></div>
+    </div> -->
     <!-- 分页的结构 -->
 
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="thirdplugins/jquery.lazyload.js"></script>
     <script src="thirdplugins/jquery.pagination.js"></script>
     <script src="http://localhost/phpJop/daojucheng/src/script/list.js"></script>
-</body>
-
+  </body>
 </html>

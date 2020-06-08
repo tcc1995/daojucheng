@@ -293,7 +293,22 @@ dt {
     position: relative;
   }
 }
+// 登录
+.cap{
+  background-color: rgb(230, 245, 255); 
+  // border-top: 1px solid rgb(230, 245, 255); 
+  position: absolute; 
+  height: 100%; 
+  z-index: 100001; 
+  width: 100%; 
+  left: 0px; 
+  top: 0px; 
+  opacity: 0.7;
+  display: none;
+}
+// .register{
 
+// }
 // 搜索框
 .search {
   padding: 10px 0 20px;
@@ -633,8 +648,9 @@ dt {
     }
   }
 }
-
+// 轮播图
 .lunbo {
+
   // 轮播
   .lunbo1 {
     width: 770px;
@@ -795,6 +811,229 @@ dt {
             text-align: left;
           }
         }
+      }
+    }
+  }
+}
+// 标题公共样式
+.title_t{
+  height: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+    s{
+      margin-right: 3px;
+      width: 26px;
+      height: 24px;
+    }
+    em{
+      font: 18px/24px 'Microsoft Yahei';
+    }
+}
+// 热卖推荐
+.sale{
+  width: 950px;
+  .sale_t{
+    s{
+      background-position: -30px -73px;
+    }
+  }
+  .sale_bu{
+    width: 951px;
+    height: 290px;
+    background: #fff;
+    dl{
+      float: left;
+      padding: 22px 30px;
+      line-height: 22px;
+      width: 256px;
+      height: 100px;
+      border-right: 1px solid #f3f4f6;
+      border-bottom: 1px solid #f3f4f6;
+      position: relative;
+
+    }
+    dt{
+      float: left;
+      margin-top: 10px;
+      img{
+        display: block;
+        width: 80px;
+        height: 67px;
+      }
+    }
+    dd{
+      margin-left: 94px;
+      p{
+        height: 22px;
+        overflow: hidden;
+      }
+    }
+    .sale_btn{
+      display: inline-block;
+      background: #f74a4a;
+      color: #fff;
+      border-bottom: 2px solid #e43333;
+      text-align: center;
+      cursor: pointer;
+      line-height: 26px;
+      height: 25px;
+      width: 90px;
+      margin-top: 4px;
+    }
+  }
+}
+// 每日惊喜
+.seckill{
+  // 标题
+  .seckill_t{
+    s{
+      margin-right: 3px;
+      background-position: -60px -73px;
+    }
+  }
+  // 内容
+  .seckill_bu{
+    height: 290px;
+    background: #fff;
+    dl{
+      width: 190px;
+      height: 280px;
+      margin: 0 auto;
+      padding-top: 10px;
+      line-height: 22px;
+      position: relative;
+      img{
+        display: block;
+        width: 190px;
+        height: 162px;
+        margin-bottom: 5px;
+      }
+    }
+    dd{
+      display: block;
+      // margin-inline-start: 40px;
+      // float: left;
+      span{
+        em{
+          background: #7f8b99;
+          margin: 0 3px;
+          padding: 0 5px;
+        }
+      }
+    }
+    .seckill_btn{
+      width: 190px;
+      height: 25px;
+      line-height: 26px;
+      margin-top: 7px;
+      overflow: hidden;
+      display: inline-block;
+      background: #f74a4a;
+      color: #fff;
+      border-bottom: 2px solid #e43333;
+      text-align: center;
+      cursor: pointer;
+    }
+    .seckill_djms{
+      position: absolute;
+      top: 5px;
+      left: -10px;
+      width: 23px;
+      height: 69px;
+      background-position: -60px -160px;
+      color: #fff;
+      line-height: 15px;
+      text-align: center;
+      font-weight: 800;
+      font-size: 14px;
+      padding-top: 2px;
+    }
+  }
+}
+.love{
+    .love_t{
+      s{
+        background-position: 0 -73px;
+      }
+      span{
+        color: #e3e3e3;
+        margin: 0 12px;
+        font-size: 14px;
+        line-height: 14px;
+      }
+      a{
+        color: #1994eb;
+      }
+    }
+    .love_bu{
+      width: 950px;
+      height: 216px;
+      background: #fff;
+    }
+    dl{
+      width: 121px;
+      height: 160px;
+      padding: 28px 34px;
+      border-left: 1px solid #f3f4f6;
+      float: left;
+      cursor: pointer;
+    }
+    img{
+      display: block;
+      width: 90px;
+      height: 75px;
+      margin: 10px auto 10px auto;
+      // cursor: pointer;
+    }
+    dd{
+      text-align: center;
+      p{
+        height: 40px;
+        overflow: hidden;
+      }
+    }
+}
+.sign{
+  position: relative;
+  .sign_t{
+    s{
+      width: 26px;
+      height: 24px;
+      background-position: 0 -73px;
+      margin-right: 3px;
+    }
+  }
+  .sign_bn{
+    padding: 20px;
+    height: 176px;
+    background: #fff;
+    a{
+      width: 190px;
+      height: 77px;
+      border-bottom-width: 6px;
+      font-size: 18px;
+      line-height: 77px;
+      text-align: left;
+      margin-top: 15px;
+      display: inline-block;
+      background: #f74a4a;
+      color: #fff;
+      border-bottom: 2px solid #e43333;
+      cursor: pointer;
+      s{
+        float: left;
+        width: 27px;
+        height: 26px;
+        background-position: -140px -137px;
+        margin: 27px 10px 0 38px;
+      }
+    }
+    .sign_p{
+      padding: 10px 0;
+      margin-bottom: 10px;
+      text-align: center;
+      p{
+        margin-bottom: 5px;
       }
     }
   }

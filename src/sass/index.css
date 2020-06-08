@@ -354,6 +354,18 @@ dt {
   position: relative;
 }
 
+.cap {
+  background-color: #e6f5ff;
+  position: absolute;
+  height: 100%;
+  z-index: 100001;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.7;
+  display: none;
+}
+
 .search {
   padding: 10px 0 20px;
   background: #fff;
@@ -881,4 +893,239 @@ dt {
   font-style: normal;
   color: #999;
   text-align: left;
+}
+
+.title_t {
+  height: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.title_t s {
+  margin-right: 3px;
+  width: 26px;
+  height: 24px;
+}
+
+.title_t em {
+  font: 18px/24px 'Microsoft Yahei';
+}
+
+.sale {
+  width: 950px;
+}
+
+.sale .sale_t s {
+  background-position: -30px -73px;
+}
+
+.sale .sale_bu {
+  width: 951px;
+  height: 290px;
+  background: #fff;
+}
+
+.sale .sale_bu dl {
+  float: left;
+  padding: 22px 30px;
+  line-height: 22px;
+  width: 256px;
+  height: 100px;
+  border-right: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+  position: relative;
+}
+
+.sale .sale_bu dt {
+  float: left;
+  margin-top: 10px;
+}
+
+.sale .sale_bu dt img {
+  display: block;
+  width: 80px;
+  height: 67px;
+}
+
+.sale .sale_bu dd {
+  margin-left: 94px;
+}
+
+.sale .sale_bu dd p {
+  height: 22px;
+  overflow: hidden;
+}
+
+.sale .sale_bu .sale_btn {
+  display: inline-block;
+  background: #f74a4a;
+  color: #fff;
+  border-bottom: 2px solid #e43333;
+  text-align: center;
+  cursor: pointer;
+  line-height: 26px;
+  height: 25px;
+  width: 90px;
+  margin-top: 4px;
+}
+
+.seckill .seckill_t s {
+  margin-right: 3px;
+  background-position: -60px -73px;
+}
+
+.seckill .seckill_bu {
+  height: 290px;
+  background: #fff;
+}
+
+.seckill .seckill_bu dl {
+  width: 190px;
+  height: 280px;
+  margin: 0 auto;
+  padding-top: 10px;
+  line-height: 22px;
+  position: relative;
+}
+
+.seckill .seckill_bu dl img {
+  display: block;
+  width: 190px;
+  height: 162px;
+  margin-bottom: 5px;
+}
+
+.seckill .seckill_bu dd {
+  display: block;
+}
+
+.seckill .seckill_bu dd span em {
+  background: #7f8b99;
+  margin: 0 3px;
+  padding: 0 5px;
+}
+
+.seckill .seckill_bu .seckill_btn {
+  width: 190px;
+  height: 25px;
+  line-height: 26px;
+  margin-top: 7px;
+  overflow: hidden;
+  display: inline-block;
+  background: #f74a4a;
+  color: #fff;
+  border-bottom: 2px solid #e43333;
+  text-align: center;
+  cursor: pointer;
+}
+
+.seckill .seckill_bu .seckill_djms {
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 23px;
+  height: 69px;
+  background-position: -60px -160px;
+  color: #fff;
+  line-height: 15px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 2px;
+}
+
+.love .love_t s {
+  background-position: 0 -73px;
+}
+
+.love .love_t span {
+  color: #e3e3e3;
+  margin: 0 12px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.love .love_t a {
+  color: #1994eb;
+}
+
+.love .love_bu {
+  width: 950px;
+  height: 216px;
+  background: #fff;
+}
+
+.love dl {
+  width: 121px;
+  height: 160px;
+  padding: 28px 34px;
+  border-left: 1px solid #f3f4f6;
+  float: left;
+  cursor: pointer;
+}
+
+.love img {
+  display: block;
+  width: 90px;
+  height: 75px;
+  margin: 10px auto 10px auto;
+}
+
+.love dd {
+  text-align: center;
+}
+
+.love dd p {
+  height: 40px;
+  overflow: hidden;
+}
+
+.sign {
+  position: relative;
+}
+
+.sign .sign_t s {
+  width: 26px;
+  height: 24px;
+  background-position: 0 -73px;
+  margin-right: 3px;
+}
+
+.sign .sign_bn {
+  padding: 20px;
+  height: 176px;
+  background: #fff;
+}
+
+.sign .sign_bn a {
+  width: 190px;
+  height: 77px;
+  border-bottom-width: 6px;
+  font-size: 18px;
+  line-height: 77px;
+  text-align: left;
+  margin-top: 15px;
+  display: inline-block;
+  background: #f74a4a;
+  color: #fff;
+  border-bottom: 2px solid #e43333;
+  cursor: pointer;
+}
+
+.sign .sign_bn a s {
+  float: left;
+  width: 27px;
+  height: 26px;
+  background-position: -140px -137px;
+  margin: 27px 10px 0 38px;
+}
+
+.sign .sign_bn .sign_p {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sign .sign_bn .sign_p p {
+  margin-bottom: 5px;
 }

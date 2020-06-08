@@ -16,12 +16,18 @@
         $.each(data, function (index, value) {
             $strhtml += `
                 <li>
-                    <a href="detail.html?sid=${value.sid}" target="_blank">
-                        <img class="lazy" data-original="${value.url}" width="200" height="200"/>
-                        <p>${value.sid}${value.title}</p>
-                        <span class="price">￥${value.price}</span>
+                        <div class="list_k">
+                            <img class="lazy" data-original="${value.url}" width="116" height="212"/>
+                        </div>
+                        <p class="djname">${value.sid}${value.title}</p>
+                        <div class="list_q">微信价：
+                            <span class="price">&nbsp;&nbsp;&nbsp;￥${value.price}</span>
+                        </div>
                         <span>${value.sailnumber}</span>
-                    </a>
+                        <div class="bxlist-t2 ">
+                            <a href="detail.html?sid=${value.sid}" target="_blank">立即购买</a>
+                        </div>
+
                 </li>
             `;
         });
@@ -58,7 +64,7 @@
         callback: function (api) {
             console.log(api.getCurrent());//获取的页码给后端
             $.ajax({
-                url: 'http://localhost/nz1903item/php/listdata.php',
+                url: 'http://localhost/phpJop/daojucheng/php/listdata.php?',
                 data: {
                     page: api.getCurrent()
                 },
@@ -68,13 +74,19 @@
                 $.each(data, function (index, value) {
                     $strhtml += `
                         <li>
-                            <a href="detail.html?sid=${value.sid}" target="_blank">
+                            <div class="list_k">
                                 <img src="${value.url}"/>
-                                <p>${value.sid}${value.title}</p>
-                                <span class="price">￥${value.price}</span>
+                            </div>
+                                <p class="djname">${value.sid}${value.title}</p>
+                                <div class="list_q">微信价：
+                                    <span class="price">￥${value.price}</span>
+                                </div>
                                 <span>${value.sailnumber}</span>
-                            </a>
+                                <div class="bxlist-t2 ">
+                                    <a href="detail.html?sid=${value.sid}" target="_blank">立即购买</a>
+                                </div>
                         </li>
+                        
                     `;
                 });
                 $strhtml += '</ul>';
