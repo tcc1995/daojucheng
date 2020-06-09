@@ -1,51 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>商品详情页</title>
-    <link rel="stylesheet" href="css/detail.css">
-</head>
+    <link rel="stylesheet" href="css/detail.css" />
+  </head>
 
-<body>
-    <div class="goodsinfo">
-        <div class="box">
-            <a href="cart.html" target="_blank">进入购物车</a>
+  <body>
+    <!-- 头部 -->
+    <div class="header">
+      <div class="wrap">
+        <div class="fl lefthead">
+          <a href=""><s class="i_sp i_mobile"></s>手机版</a>
+          <i>|</i>
+          <a href="">Q币充值</a>
         </div>
-        <div class="wrap">
-            <div id="spic">
-                <img src="" alt="" id="smallpic">
-                <div id="sf"></div>
+        <div class="fr righthead">
+          <div class="righthead_menu">
+            <a href="javascript:;" class="i_sp game_menu" id="game_menu"
+              >游戏导航</a
+            >
+          </div>
+          <iframe
+            scrolling="no"
+            frameborder="0"
+            src="//daoju.qq.com/mall/game_area.htm?v=20131108"
+            allowtransparency="true"
+            class="game_pop"
+            style="width: 828px;"
+          ></iframe>
+          <i>|</i>
+          <a href="">帮助中心</a>
+          <i>|</i>
+          <a href="">个人中心</a>
+          <i>|</i>
+          <a href="">我的订单</a>
+          <i>|</i>
+          <div>
+            <div class="login fr">
+              您还未登录，请<a href="" class="login_a">登录</a>
+              <!-- <div class="cap"></div>
+                      <div class="register"> -->
             </div>
-            <div id="bf">
-                <img src="" alt="" id="bpic">
+            <div style="display: none;">
+              <p>
+                欢迎你，
+                <a href="">
+                  <span></span>
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="">退出</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="registry.html">请注册</a>
+                    <a href="login.html">请登录</a> -->
+      </div>
+    </div>
+    <!-- 主题栏 -->
+    <div class="menu">
+      <!-- 搜索栏 -->
+      <div class="search">
+        <div class="wrap searchbox">
+          <div class="fl logobox">
+            <a href="" class="navico">道聚城</a>
+          </div>
+          <div class="sbar fl">
+            <div class="navico stext">
+              <a href="" class="navico">搜索</a>
+              <input
+                type="text"
+                value="输入道具进行搜索"
+                attr_default="输入道具进行搜索"
+                report_tag="mall.lol.index.categories_new"
+              />
+            </div>
+          </div>
+          <div class="logogame fl">
+            <a href="" class="navico">英雄联盟</a>
+          </div>
+        </div>
+      </div>
+      <!-- 主导航栏 -->
+      <div class="nav">
+        <div class="wrap navico navwrap">
+          <ul class="fl clearfix" style="overflow: hidden;">
+            <li class="navico">
+              <a
+                href="/lol/index.shtml?ADTAG=innercop.lol.SY.sy_new"
+                class="js_btn_click_report"
+                >首页</a
+              >
+            </li>
+            <li
+              class="navico current"
+              style="background-position: -285px -5px;"
+            >
+              <a
+                href="/lol/list/shoppinglist.shtml?ADTAG=innercop.lol.SY.shoppinglist_new"
+                class="js_btn_click_report"
+                style="
+                  font-weight: bold;
+                  color: #fef7ec;
+                  text-shadow: 1px 3px 3px #bf4d00;
+                "
+                >商品列表</a
+              >
+            </li>
+            <li class="navico">
+              <a
+                target="_blank"
+                href="/mall/actcenter.shtml?flag=lol&amp;ADTAG=innercop.lol.SY.actlist_new"
+                class="js_btn_click_report"
+                >活动专区</a
+              >
+            </li>
+            <li class="navico">
+              <a
+                target="_blank"
+                href="//daoju.qq.com/mall/tao.shtml?flag=lol&amp;ADTAG=innercop.lol.SY.tao_new"
+                class="js_btn_click_report"
+                >限时折扣</a
+              >
+            </li>
+            <li class="navico">
+              <a
+                target="_blank"
+                href="/mall/judou.shtml?sBizCode=lol"
+                class="js_btn_click_report"
+                >聚豆乐园</a
+              >
+            </li>
+            <li class="navico">
+              <a
+                target="_blank"
+                href="//mall.qq.com/lol/?e_code=305545&amp;ADTAG=innercop.lol.SY.zhoubian"
+                class="js_btn_click_report"
+                >周边商城</a
+              >
+            </li>
+            <li class="navico">
+              <a
+                target="_blank"
+                href="/mall/center.shtml?flag=lol&amp;ADTAG=innercop.lol.SY.center_new"
+                class="js_btn_click_report"
+                >个人中心</a
+              >
+            </li>
+          </ul>
+          <div class="fr nav-cart">
+            <a
+              href="/lol/cart.shtml?ADTAG=innercop.lol.SY.paylist_new"
+              class="btn-cart"
+              title="购物车"
+            >
+              <i id="cartNum">（0）</i>
+              <s class="navico i-cart"></s>购物车
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 子导航 -->
+      <div id="blk_nav_cate" class="subnav" style="visibility: visible;">
+        <div class="wrap subwrap">
+          <div class="subnavlist">
+            <ul style="height: 55px; overflow: hidden;">
+              <li id="cate_nav_0" class="all-class current">
+                <a
+                  href="/lol/list/shoppinglist.shtml?ADTAG=innercop.lol.SY.shoppinglist_new"
+                  class="dj-link"
+                  title="全部分类"
+                  style="color: #36ab87; border-bottom: 2px solid #36ab87;"
+                  >全部分类</a
+                >
+              </li>
+              <li id="cate_nav_16">
+                <a
+                  href="/lol/list/16-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_16"
+                  class="dj-link"
+                  >英雄</a
+                >
+              </li>
+              <li id="cate_nav_393">
+                <a
+                  href="/lol/list/393-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_393"
+                  class="dj-link"
+                  >表情</a
+                >
+              </li>
+              <li id="cate_nav_427">
+                <a
+                  href="/lol/list/427-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_427"
+                  class="dj-link"
+                  >海克斯及其他</a
+                >
+              </li>
+              <li id="cate_nav_439">
+                <a
+                  href="/lol/list/439-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_439"
+                  class="dj-link"
+                  >云顶之弈</a
+                >
+              </li>
+              <li id="cate_nav_17">
+                <a
+                  href="/lol/list/17-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_17"
+                  class="dj-link"
+                  >皮肤</a
+                >
+              </li>
+              <li id="cate_nav_18">
+                <a
+                  href="/lol/list/18-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_18"
+                  class="dj-link"
+                  >道具</a
+                >
+              </li>
+              <li id="cate_nav_19">
+                <a
+                  href="/lol/list/19-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_19"
+                  class="dj-link"
+                  >守卫眼皮肤</a
+                >
+              </li>
+              <li id="cate_nav_136">
+                <a
+                  href="/lol/list/136-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_136"
+                  class="dj-link"
+                  >道具包</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 面包屑 -->
+    <div class="wrap location-box clearfix">
+      <div class="fl">
+        您现在的位置：<a href="/lol">英雄联盟</a
+        >&nbsp;&nbsp;&gt;&nbsp;&nbsp;<span id="loc_list_cate">
+          全部分类>道具详情
+        </span>
+      </div>
+      <a
+        id="role—unbind"
+        class="fr location-user"
+        href="javascript:;"
+        style="display: none;"
+      >
+        <span>亲爱的召唤师，欢迎登录</span>
+      </a>
+      <a
+        id="role—binded"
+        class="fr location-user"
+        href="javascript:;"
+        style="display: none;"
+      >
+        <div class="fr role_bind" data-action="bind-role">
+          召唤师信息：<span id="role-binded-rolename" class="rolename"></span
+          ><span id="role-binded-area"></span
+          ><span id="role-binded-server"></span
+          ><em class="comico btn-filter-down"></em>
+        </div>
+      </a>
+    </div>
+    <!-- 内容区 -->
+
+
+
+
+    
+    <!-- <div class="wrap goodsinfo">
+    <div class="box">
+        <a href="cart.html" target="_blank">进入购物车</a>
+    </div>
+    <div class="wrap1">
+        <div id="spic">
+          <img src="" alt="" id="smallpic" />
+          <div id="sf"></div>
+        </div>
+        <div id="bf">
+          <img src="" alt="" id="bpic" />
+        </div>
+        <div id="ulist">
+          <a href="javascript:;" id="left">&lt;</a>
+          <div id="list">
+            <ul></ul>
+          </div>
+          <a href="javascript:;" id="right">&gt;</a>
+        </div>
+      <div class="goodsinfo-word">
+        <div class="p-name">
+          <a class="loadtitle" href="##"></a>
+        </div>
+        <div class="p-price">
+          <strong><em>￥</em><i class="loadpcp"></i></strong>
+        </div>
+        <div class="p-btn">
+          <input type="text" id="count" value="1" />
+          <a href="javascript:;">加入购物车</a>
+        </div>
+      </div> 
+    </div> -->
+
+
+    <!-- 主要内容 -->
+    <div class="wrap content">
+        <!-- 左侧 -->
+        <div class="fl con_left"></div>
+        <!-- 右侧 -->
+        <div class="fr con_right">
+            <!-- 放大镜 -->
+            <div class="scale">
+                <div class="spic">
+                    <!-- 小图 -->
+                    <img src="" alt="" id="smallpic">
+                    <div class="sf"></div>
+                    <!-- 小放 -->
+                </div>
+                <div class="bf">
+                    <!-- 大放 -->
+                    <img src="" alt="" class="bpic">
+                    <!-- 大图 -->
+                </div>
             </div>
             <div id="ulist">
                 <a href="javascript:;" id="left">&lt;</a>
                 <div id="list">
-                    <ul>
-
-                    </ul>
+                    <ul></ul>
                 </div>
                 <a href="javascript:;" id="right">&gt;</a>
             </div>
-        </div>
-        <div class="goodsinfo-word">
-            <div class="p-name">
-                <a class="loadtitle" href="##"></a>
-            </div>
-            <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
-            <div class="p-btn">
-                <input type="text" id="count" value="1" />
-                <a href="javascript:;">加入购物车</a>
-                <!-- void(0) -->
-            </div>
+            <div class="goodsinfo-word">
+                <div class="p-name">
+                  <a class="loadtitle" href="##"></a>
+                </div>
+                <div class="p-price">
+                  <strong><em>￥</em><i class="loadpcp"></i></strong>
+                </div>
+                <div class="p-btn">
+                  <input type="text" id="count" value="1" />
+                  <a href="javascript:;">加入购物车</a>
+                </div>
+            </div> 
         </div>
     </div>
+
+
+
+
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="thirdplugins/jquery.cookie.js"></script>
     <script src="http://localhost/phpJop/daojucheng/src/script/detail.js"></script>
-</body>
-
+  </body>
 </html>

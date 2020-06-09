@@ -1,0 +1,782 @@
+@charset "UTF-8";
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.6em Microsoft YaHei, Tahoma, simsun;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  content: "\20";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.dn {
+  display: none !important;
+}
+
+.di {
+  display: inline;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tar {
+  text-align: right;
+}
+
+.ofh {
+  overflow: hidden;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+a {
+  color: #3a3f4a;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  color: #f74a4a;
+  text-decoration: underline;
+}
+
+a.noline:hover {
+  text-decoration: none;
+}
+
+a.underline {
+  text-decoration: underline;
+}
+
+a.more {
+  font-family: "\5b8b\4f53";
+}
+
+.d_gray,
+a.d_gray {
+  color: #616161;
+}
+
+.gray,
+a.gray {
+  color: #999;
+}
+
+.h_gray {
+  color: #e3e3e3;
+}
+
+.blue,
+a.blue {
+  color: #1994eb;
+}
+
+.red,
+a.red {
+  color: #f74a4a;
+}
+
+.green,
+a.green {
+  color: #329900;
+}
+
+.orange,
+a.orange {
+  color: #f50;
+}
+
+.hide {
+  width: 0;
+  height: 0;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.i_sp {
+  background: url(../img/icon.png) no-repeat;
+}
+
+.bg_sp {
+  background: url(../img/bg.png) no-repeat;
+}
+
+.b_sp {
+  background: url(../img/btn.png) no-repeat;
+}
+
+body {
+  background: #f3f4f6;
+  color: #2e2e2e;
+}
+
+.wrap {
+  width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w230 {
+  width: 230px;
+}
+
+.w240 {
+  width: 240px;
+}
+
+.w405 {
+  width: 405px;
+}
+
+.w440 {
+  width: 440px;
+}
+
+.w490 {
+  width: 490px;
+}
+
+.w775 {
+  width: 775px;
+}
+
+.w950 {
+  width: 950px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr15 {
+  margin-right: 15px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+dt {
+  display: block;
+}
+
+.comico {
+  background: url(../img/comico.png) no-repeat;
+}
+
+.header {
+  background: #f9f9f9;
+  height: 30px;
+  line-height: 30px;
+  color: #666;
+}
+
+.header .lefthead {
+  height: 30px;
+  overflow: hidden;
+}
+
+.header .lefthead a {
+  color: #666;
+  float: left;
+}
+
+.header .lefthead .i_mobile {
+  float: left;
+  width: 11px;
+  height: 16px;
+  background-position: 0 0;
+  margin: 7px 3px 0 0;
+}
+
+.header .lefthead i {
+  color: #e7e7e7;
+  font-style: normal;
+  margin: 0 10px;
+  float: left;
+}
+
+.righthead {
+  width: 600px;
+}
+
+.righthead a {
+  float: right;
+}
+
+.righthead i {
+  float: right;
+  color: #e7e7e7;
+  font-style: normal;
+  margin: 0 10px;
+}
+
+.righthead .game_menu {
+  background-position: -20px -334px;
+  width: 72px;
+  height: 21px;
+  line-height: 21px;
+  margin-top: 5px;
+  padding-left: 8px;
+}
+
+.righthead .game_pop {
+  position: absolute;
+  width: 622px;
+  height: 500px;
+  top: 26px;
+  right: 80px;
+  z-index: 50;
+  display: none;
+}
+
+.righthead .login {
+  position: relative;
+}
+
+.cap {
+  background-color: #e6f5ff;
+  position: absolute;
+  height: 100%;
+  z-index: 100001;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.7;
+  display: none;
+}
+
+.menu {
+  min-height: 179px;
+  min-width: 1190px;
+  background: url(//js01.daoju.qq.com/mall/images/channelmall/lol/bg-head.jpg) no-repeat top center;
+  height: auto;
+  position: relative;
+}
+
+.navico {
+  background: url(//js01.daoju.qq.com/common/images/channel/revision/lol/navico.png) no-repeat;
+}
+
+.search {
+  height: 125px;
+}
+
+.search .searchbox {
+  height: 125px;
+  background: url(//js01.daoju.qq.com/mall/images/channelmall/lol/search.jpg) no-repeat;
+}
+
+.search .searchbox .logobox {
+  padding: 37px 0 0;
+  width: 280px;
+  height: 52px;
+}
+
+.search .searchbox .logobox a {
+  width: 280px;
+  height: 55px;
+  background-position: -670px -5px;
+  display: block;
+  text-indent: -9999em;
+}
+
+.search .searchbox .sbar {
+  margin: 39px 65px 0 100px;
+  width: 522px;
+  height: 51px;
+}
+
+.search .searchbox .sbar .stext {
+  width: 522px;
+  height: 51px;
+  background-position: -999px 0;
+  position: relative;
+}
+
+.search .searchbox .sbar .stext a {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  z-index: 2;
+  width: 49px;
+  height: 46px;
+  background-position: -1558px 0;
+  text-indent: -9999px;
+  display: block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.search .searchbox .sbar .stext input {
+  float: left;
+  margin: 1px 0 0 6px;
+  width: 450px;
+  padding: 14px 10px 15px 10px;
+  height: 18px;
+  line-height: 18px;
+  border: 0;
+  color: #9f9f9f;
+  font-size: 14px;
+  background: none;
+  text-align: left;
+}
+
+.search .searchbox .logogame {
+  margin: 37px 0 0;
+  width: 223px;
+  height: 59px;
+}
+
+.search .searchbox .logogame a {
+  width: 223px;
+  height: 59px;
+  background-position: -437px -5px;
+  display: block;
+  text-indent: -9999em;
+}
+
+.nav {
+  margin: 0 auto;
+  height: 76px;
+  position: relative;
+  z-index: 1;
+}
+
+.nav .navwrap {
+  height: 76px;
+  background-position: -5px -187px;
+}
+
+.nav .navwrap ul {
+  width: 940px;
+  height: 76px;
+  position: relative;
+}
+
+.nav .navwrap ul li {
+  float: left;
+  width: 134px;
+  height: 76px;
+  background-position: 152px 76px;
+}
+
+.nav .navwrap ul li a {
+  width: 134px;
+  height: 76px;
+  display: block;
+  text-align: center;
+  line-height: 76px;
+  font-size: 18px;
+  color: #9f9f9f;
+  position: relative;
+}
+
+.nav .navwrap .nav-cart {
+  width: 192px;
+  height: 76px;
+  line-height: 76px;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+}
+
+.nav .navwrap .nav-cart a {
+  width: 192px;
+  color: #ff5900;
+  text-indent: 18px;
+}
+
+.nav .navwrap .nav-cart a i {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 10;
+  width: 60px;
+  height: 76px;
+  line-height: 76px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  overflow: hidden;
+  text-indent: 0;
+  font-style: normal;
+}
+
+.nav .navwrap .nav-cart a s {
+  position: absolute;
+  top: 26px;
+  left: 36px;
+  z-index: 10;
+  width: 28px;
+  height: 24px;
+  background-position: -237px -5px;
+  display: block;
+}
+
+.subnav {
+  min-height: 54px;
+  height: auto;
+  background: #f3f4f6;
+}
+
+.subnav .subwrap {
+  height: auto;
+  position: relative;
+}
+
+.subnav .subwrap .subnavlist {
+  width: 1190px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  background: #e6e6e8;
+}
+
+.subnav .subwrap .subnavlist ul li {
+  width: 152px;
+  float: left;
+}
+
+.subnav .subwrap .subnavlist ul li a {
+  width: 152px;
+  display: block;
+  width: 118px;
+  height: 52px;
+  font-size: 14px;
+  color: #222;
+  text-align: center;
+}
+
+.location-box {
+  margin: 24px auto 8px;
+  width: 1190px;
+  color: #606060;
+  height: 18px;
+  position: relative;
+  zoom: 1;
+  cursor: pointer;
+}
+
+.content .con_left {
+  width: 228px;
+  height: 500px;
+  background: #fafbfc;
+}
+
+.content .con_right {
+  width: 952px;
+  height: 500px;
+  background: #fafbfc;
+  position: relative;
+}
+
+.content .con_right .scale {
+  padding: 30px 0 15px 15px;
+}
+
+.content .con_right .scale .spic {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #ccc;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.content .con_right .scale .sf {
+  background: orange;
+  opacity: 0.3;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  visibility: hidden;
+}
+
+.content .con_right .scale .spic img {
+  width: 400px;
+  height: 400px;
+  display: block;
+}
+
+.content .con_right .scale .bf {
+  width: 450px;
+  height: 450px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  margin-left: -1px;
+  visibility: hidden;
+}
+
+.content .con_right .scale .bpic {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 99;
+}
+
+#ulist {
+  position: absolute;
+  left: 15px;
+  top: 438px;
+  width: 402px;
+  height: 56px;
+  overflow: hidden;
+}
+
+#ulist a {
+  float: left;
+  width: 10px;
+  height: 54px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  line-height: 56px;
+  text-align: center;
+  background: #fff;
+}
+
+#list {
+  float: left;
+  margin-left: 18px;
+  width: 372px;
+  position: absolute;
+}
+
+#list ul {
+  list-style: none;
+  float: left;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#list ul li {
+  float: left;
+  width: 56px;
+  height: 56px;
+  padding-right: 6px;
+}
+
+#list ul li img {
+  width: 52px;
+  height: 52px;
+  border: 1px solid #ccc;
+}
+
+#right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #333;
+}
+
+#left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+  color: #fff;
+}
+
+.goodsinfo {
+  margin: 100px 0 0 100px;
+}
+
+.goodsinfo-img {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.goodsinfo-img img {
+  width: 200px;
+  height: 200px;
+}
+
+.goodsinfo-word {
+  overflow: hidden;
+  float: left;
+  position: absolute;
+  top: 60px;
+  left: 400px;
+}
+
+.p-name {
+  width: 350px;
+  height: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.p-name .loadtitle {
+  font: 16px "微软雅黑";
+  color: #666666;
+}
+
+.p-price {
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 300px;
+  height: 50px;
+  background: rgba(183, 183, 183, 0.4);
+  line-height: 50px;
+}
+
+.p-btn {
+  margin-top: 20px;
+}
+
+.p-btn input {
+  display: inline-block;
+  width: 50px;
+  height: 46px;
+  font-size: 20px;
+  font-family: "微软雅黑";
+  color: black;
+  margin-left: 50px;
+  border: 1px solid gray;
+  float: left;
+}
+
+.p-btn a {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  margin-left: 10px;
+}
