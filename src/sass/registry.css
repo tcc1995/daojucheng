@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition: all .2s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 560px;
+}
+
+body .logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 36px 43px;
+  text-decoration: none;
+  z-index: 2;
+  height: 43px;
+  line-height: 43px;
+  padding-left: 46px;
+  margin-left: 30px;
+  margin-top: 18px;
+  font-size: 36px;
+  display: block;
+  color: #000;
+}
+
+.top .item {
+  float: right;
+  margin: 20px 40px 0 0;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.902);
+  padding: 10px 0 0;
+  line-height: 24px;
+}
+
+.top {
+  min-width: 560px;
+  top: 0;
+  left: 0;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+
+.top .feedback {
+  margin-right: 60px;
+}
+
+.top .feedback a {
+  color: #000;
+  opacity: .6;
+}
+
+.top .language-entry {
+  opacity: .6;
+  color: #000;
+}
+
+.top .language-entry img:nth-child(2) {
+  display: none;
+}
+
+.top .language-entry ul {
+  list-style: none;
+  text-align: left;
+  padding-top: 8px;
+  display: none;
+  position: absolute;
+}
+
+.top .language-entry ul li {
+  padding-top: 16px;
+}
+
+.top .language-entry:hover ul {
+  display: block;
+}
+
+.top .language-entry:hover img:nth-child(1) {
+  display: none;
+}
+
+.top .language-entry:hover img:nth-child(2) {
+  display: block;
+}
+
+.top .lianghao {
+  padding: 0;
+}
+
+.top .lianghao a {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.top .lianghao a div {
+  border-radius: 6px;
+  background: #f54444;
+  background: linear-gradient(126deg, #fc4754, #ff794c) #f54444;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  margin: 10px 0 0 5px;
+  padding: 0 10px 0 24px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.top .lianghao a img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.leftlunbo {
+  /* https://cdn-go.cn/qq-web/zc.qq.com/latest/v3/img/01-4.jpg */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 480px;
+  float: left;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.leftlunbo img {
+  width: 100%;
+  height: 100%;
+}

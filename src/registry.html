@@ -5,15 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QQ注册</title>
-    <link rel="stylesheet" href="../src/css/registry.css">
-    <style>
-        div{
-            background: url("https://cdn-go.cn/qq-web/zc.qq.com/latest/v3/img/01-1.jpg");
-        }
-    </style>
+    <link rel="stylesheet" href="./css/registry.css">
 </head>
 
 <body>
+    <!-- 头部 -->
+    <div class="top">
+        <div class="item feedback">
+            <a data-bind="click: feedback" href="javascript:void(0)">意见反馈</a>
+        </div>
+        <div class="item language-entry">
+            <div>
+                简体中文&nbsp;
+                <img src="https://cdn-go.cn/qq-web/zc.qq.com/12ea5880/v3/img/down.png">
+                <img src="https://cdn-go.cn/qq-web/zc.qq.com/12ea5880/v3/img/up.png" >
+            </div>
+            <ul>
+                <li>
+                    <a  href="javascript:void(0)">繁體中文</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">English</a>
+                </li>
+            </ul>
+        </div>
+        <div class="item lianghao">
+            <a href="">
+                <div>QQ靓号</div>
+                <img src="https://cdn-go.cn/qq-web/zc.qq.com/12ea5880/v3/img/logo3.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- 左侧轮播图 -->
     <a class="logo" href="">QQ</a>
     <div class="leftlunbo">
         <img src="https://cdn-go.cn/qq-web/zc.qq.com/latest/v3/img/01-1.jpg" >
@@ -29,18 +53,31 @@
         setInterval(function(){
             if(index>3)index=0;
             $('.leftlunbo img').attr('src',jpgArray[index++]);
-        },2000)
-        
-        
+        },2000)  
     </script>
-        <legend>欢迎注册QQ</legend>
-        <form action="http://localhost/nz1903item/php/registry.php" method="post">
-            <p><label for="">用户姓名：</label><input type="text" name="username" class="username"><span></span></p>
-            <p><label for="">用户密码：</label><input type="password" name="password"></p>
-            <p><label for="">确认密码：</label><input type="password" name="repass"></p>
-            <p><label for="">用户邮箱：</label><input type="text" name="email"></p>
-            <p><input type="submit" value="用户注册" name="submit"></p>
-        </form>
+
+    <div class="main-wraper">
+        <div class="main">
+            <div class="form">
+                <div>
+                    <div class="welcome">欢迎注册QQ</div>
+                    <div class="header free-lianghao-entry">
+                        <a href="">免费靓号</a>
+                    </div>
+                    <div class="header">每一天，乐在沟通。</div>
+                </div>
+                <form action="http://localhost/nz1903item/php/registry.php" method="post">
+                    <p><label for="">用户姓名：</label><input type="text" name="username" class="username"><span></span></p>
+                    <p><label for="">用户密码：</label><input type="password" name="password"></p>
+                    <p><label for="">确认密码：</label><input type="password" name="repass"></p>
+                    <p><label for="">用户邮箱：</label><input type="text" name="email"></p>
+                    <p><input type="submit" value="用户注册" name="submit"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <legend>欢迎注册QQ</legend>
+    
     
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://localhost/phpJop/daojucheng/src/script/registry.js"></script>
